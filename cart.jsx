@@ -139,7 +139,7 @@ const Products = (props) => {
           "data": {
             "Stock": newStock
           }
-        }
+        },
         );
     })
     .catch(function (error) {
@@ -151,7 +151,7 @@ const Products = (props) => {
 }
 
   //UPDATE PRODUCT DATABASE
-  function updateProductDatabase (id, payload) {
+  function updateProductDatabase (id, name, stock, payload) {
     let url = "http://localhost:1337/api/products/" + id;
 
     axios
